@@ -19,11 +19,44 @@ class UploadFile
 	}
 
 	public function setMaxSize($bytes)
-	{
+	{	
+		$serverMax = self::convertToBytes(ini_get('upload_max_filesize'));
+		if ($bytes > $serverMax){
+			throw new \Exception("Max size of files can not exceed server limit: " . self::convertFromBytes($serverMax));
+		}
 		if(is_numeric($bytes) && $bytes > 0){
 			$this->maxSize = $bytes;
 		}
 
+	}
+
+	public static function convertToBytes($val)
+	{	
+		$val = trim($val);
+		$last = strtolower($val[strlen($val)-1]);
+		if(in_array($last, array('g','m','k'))){
+			switch($last){
+				case 'g':
+					$val *= 1024;
+				case 'm':
+					$val *= 1024;
+				case 'k':
+					$val *= 1024;
+
+			}
+		}
+		return $val;
+	}
+
+	public static function convertFromBytes($bytes)
+	{
+
+		$bytes /= 1024;
+		if($bytes > 1024){
+			return number_format($bytes/1024, 1) . ' MB';
+		}else{
+			return number_format($bytes, 1) . ' KB';
+		}
 	}
 
 	public function upload()
@@ -57,7 +90,7 @@ class UploadFile
 		switch ($file) {
 			case 1:
 			case 2:
-				$this->messages[] = $file['name'] . ' is too big';
+				$this->messages[] = $file['name'] . ' is too big (max: ' . self::convertFromBytes($this->maxSize) . ')';
 				break;
 			case 3:
 				$this->messages[] = $file['name'] . ' was only partially laoded';
@@ -77,7 +110,7 @@ class UploadFile
 			$this->messages[] = $file['name'] . ' is empty.';
 			return false;
 		}elseif ($file['size'] > $this->maxSize){
-			$this->messages[] = $file['name'] . ' is larger than is allowed.';
+			$this->messages[] = $file['name'] . ' is larger than is allowed(max: ' . self::convertFromBytes($this->maxSize) . ')';
 			return false;
 		}else{
 			return true;
