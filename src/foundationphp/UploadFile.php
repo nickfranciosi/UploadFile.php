@@ -19,7 +19,7 @@ class UploadFile
 	}
 
 	public function setMaxSize($bytes)
-	{
+	{	
 		if(is_numeric($bytes) && $bytes > 0){
 			$this->maxSize = $bytes;
 		}
