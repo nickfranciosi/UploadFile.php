@@ -20,7 +20,7 @@ if(isset($_POST['upload'])){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PHP File Upload Class</title>
+	<title>PHP File</title>
 </head>
 <body>
 <h2>Uploading Files</h2>
