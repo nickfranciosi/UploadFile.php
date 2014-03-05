@@ -6,6 +6,16 @@ class UploadFile
 	protected $destination;
 	protected $messages = [];
 	protected $maxSize = 51200;
+	protected $permittedTypes = array(
+		'image/jpg',
+		'image/jpeg',
+		'image/png',
+		'image/gif'
+	);
+	protected $newName;
+	protected $typeCheckingOn = true;
+	protected $notTrusted = array ('bin','exe','js','pl','php','py','sh');
+	protected $suffix = '.upload';
 
 	public function __construct($uploadFolder)
 	{
@@ -59,6 +69,18 @@ class UploadFile
 		}
 	}
 
+	public function allowAllTypes($suffix = null)
+	{
+		$this->typeCheckingOn = false;
+		if(!is_null($suffix)){
+			if(strpos($suffix, '.') === 0 || $suffix == ''){
+				$this->suffix = $suffix;
+			}else{
+				$this->suffix = '.' . $suffix;
+			}
+		} 
+	}
+
 	public function upload()
 	{
 		$uploaded = current($_FILES);
@@ -82,6 +104,13 @@ class UploadFile
 		if(!$this->checkSize($file)){
 			return false;
 		}
+		if($this->typeCheckingOn){
+
+			if(!$this->checkType($file)){
+				return false;
+			}
+		}
+		$this->checkName($file);
 		return true;
 	}
 
@@ -117,9 +146,41 @@ class UploadFile
 		}
 	}
 
+	protected function checkType($file)
+	{
+		if( in_array($file['type'], $this->permittedTypes)){
+			return true;
+		}else{
+			$this->messages[] = $file['name'] . ' is not permitted type of file.';
+			return false;
+		}
+	}
+
+	protected function checkName($file)
+	{
+		$this->newName = null;
+		$noSpaces = str_replace(' ', '_', $file['name']);
+		if($noSpaces != $file['name']){
+			$this->newName = $noSpaces;
+		}
+		$nameparts = pathinfo($noSpaces);
+		$extension = isset($nameparts['extension']) ? $nameparts['extension'] : '';
+		if(!$this->typeCheckingOn && !empty($this->suffix)){
+			if(in_array($extension, $this->notTrusted) || empty($extension)){
+				$this->newName = $noSpaces . $this->suffix;
+			}
+		}
+	}
+
 	protected function moveFile($file)
 	{
-		$this->messages[] = $file['name'] . ' was uploaded successfully.';
+		$result= $file['name'] . ' was uploaded successfully ';
+		if(!is_null($this->newName)){
+			$result .= "and renamed to " . $this->newName;
+		}
+		$result .= '.';
+
+		$this->messages[] = $result;
 	}
 
 }
