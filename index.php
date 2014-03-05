@@ -21,6 +21,7 @@ if(isset($_POST['upload'])){
 <html>
 <head>
 	<title>PHP File</title>
+
 </head>
 <body>
 <h2>Uploading Files</h2>
