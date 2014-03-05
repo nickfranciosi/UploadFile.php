@@ -1,0 +1,446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ser",
+				"serverMax"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"check",
+				"checkSize"
+			],
+			[
+				"max",
+				"maxSize"
+			],
+			[
+				"Uploa",
+				"UploadFile"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"fot",
+				"font-style"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"subdivi",
+				"subdivision_name"
+			],
+			[
+				"mysqli_connect",
+				"mysqli_connect_error"
+			],
+			[
+				"trigger",
+				"trigger_error"
+			],
+			[
+				"protec",
+				"protected_property_name"
+			],
+			[
+				"propert",
+				"property_exists"
+			],
+			[
+				"_postal",
+				"_postal_code_guess"
+			],
+			[
+				"postal",
+				"postal_code"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"var",
+				"var_export"
+			],
+			[
+				"street",
+				"streetAddress_2"
+			],
+			[
+				"stree",
+				"streetAddress_1"
+			],
+			[
+				"init",
+				"initialLocation"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"product",
+				"product-types"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"set",
+				"setCenter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nfranciosi/Desktop/member_140304.xml",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/5C952BA2-CF05-4CC0-ABFB-4D7CF371551A/residential.html",
+		"/Users/nfranciosi/Desktop/prodCat.asp",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/118EDAEF-50B4-4679-9FE0-2B5F0F20AAF8/press-releases.html",
+		"/Users/nfranciosi/Desktop/training/file_upload/UploadFile.php",
+		"/Users/nfranciosi/Desktop/training/file_upload/index.php",
+		"/Users/nfranciosi/Desktop/ewood- 11950/html/css/main.css",
+		"/Users/nfranciosi/Desktop/ewood- 11950/html/index.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/F26B5E42-FE64-44F9-A327-6BC5880ED0E0/default.aspx",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/9F9E0C3B-B861-4ABC-B4B4-4EE792809432/com-Gas.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/6A58DF9B-064B-40F6-9D52-66EF339B7CE9/res-gas.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/51096818-BCF9-46CC-A490-36A28FD1FF73/res-gas.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/D049462F-9590-4749-8070-7475B35AD927/plugins.js",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/A298999E-79B0-432D-BFD7-E85ADEAAE6B5/main.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/5282C0BB-0B98-47AA-9A9B-D6FF83C2D841/download-report-csv.php",
+		"/Users/nfranciosi/Desktop/ecobuild e-blast/index.html",
+		"/Users/nfranciosi/Desktop/ecobuild e-blast/Ecobuild_exhibitor_template.html",
+		"/Users/nfranciosi/Desktop/aos contractor eblast/index.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/207205C2-779C-4D92-AC98-4716AF71C707/com-gas.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/0E40791F-E614-41C8-83F8-64BE0A7E2463/main.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/9AE90E74-3F72-458D-B493-0CF1BDEE944D/main.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/971A0F0A-B844-4CC4-9E86-67A24D5C9A1A/post-receive",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/7D6BB8CB-C8E0-4CC3-A37E-BB5EE5F7261D/post-receive",
+		"/Users/nfranciosi/Sites/protech_dev/html/core/config/config.inc.php",
+		"/Users/nfranciosi/Sites/protech_dev/html/manager/config.core.php",
+		"/Users/nfranciosi/Sites/protech_dev/html/config.core.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/29D1281A-F443-4CD2-AD0A-2487D3637C69/config.inc.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/6EB690CD-D677-40BD-A34B-332613AA4C30/res-gas.html",
+		"/Users/nfranciosi/Desktop/lp_new/index.html",
+		"/Users/nfranciosi/Desktop/lp_eblast/index.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/8ADCB916-B415-4CF8-9E35-B5D60F820DE4/racing.css",
+		"/Users/nfranciosi/Desktop/php_oop/Ex_Files_oophp/Exercise Files/02_01/Vagrantfile",
+		"/Users/nfranciosi/Desktop/php_oop/Ex_Files_oophp/Exercise Files/02_01/bootstrap.sh",
+		"/Users/nfranciosi/Desktop/php_oop/vagrant_getting_started/Vagrantfile",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/1ADCB28B-AB9B-4FD5-B648-0C688F656C7B/default.htm",
+		"/Users/nfranciosi/Desktop/Master.master",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/970F5DD0-BA0E-4A13-8193-629B61180911/default.aspx",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/FF6C7441-96CC-4D52-B60E-07485FDCF254/application.js",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/B143F1A5-06CF-4B99-A3BE-CF78570D7FED/Base.cs",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/E53B76F5-A6CC-4C09-8A61-45591B8D0AC8/SupportTab.ascx.cs",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/35E27FD0-4D4F-4CC2-9A3D-639D6A25DFBC/DCNoScriptFrame.ascx.cs",
+		"/Users/nfranciosi/Desktop/MasterPage.master",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/0744AF44-E74A-47CD-9F87-EAACF5BE1869/Manuals.aspx",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/D40B5552-2C49-4F89-A012-9F90F013C810/MasterPage.master.cs",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/97954E72-5005-432D-9703-4D6869EC738E/Default.aspx",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/B9C9CF55-889F-43A5-BA5F-0A8BB13CB718/Default.aspx.cs",
+		"/Users/nfranciosi/Desktop/php_oop/Ex_Files_oophp/Exercise Files/03_03/class.Address.inc",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/AE4D9FA0-B924-4014-A9EB-BD274F1E3B0F/Default.aspx.cs",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/BC17F109-2EB0-45A8-A13B-E6117721378F/Default.aspx",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/CC885D3F-B814-4F82-A429-560F44D97D4A/index-2.php",
+		"/Users/nfranciosi/Desktop/php_oop/Ex_Files_oophp/Exercise Files/02_01/demo.php",
+		"/Users/nfranciosi/Desktop/nginx/nginx-php-fundamentals/2-nginx-php-fundamentals-m2-static-nginx-exercise-files/M2/after/Sixeyed.Omnium.Mvc/Scripts/jquery-1.8.2.js",
+		"/Users/nfranciosi/Desktop/php-test/inc/index.php",
+		"/Users/nfranciosi/Desktop/aos pst conf eblast/index.html",
+		"/Users/nfranciosi/Desktop/e-blast2/index.html",
+		"/Users/nfranciosi/Desktop/NASCAR Eblast/index.html",
+		"/Users/nfranciosi/Desktop/NASCAR Eblast/hbp-italianmeats2014.html",
+		"/Users/nfranciosi/Desktop/Client Work/HBP/hbe-valentines/hbp-italianmeats2014.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/386FBF3A-4E3F-4754-A8A5-0E948084FD1E/hbp_1.min.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/C96793BB-1B1B-4EF8-A5E7-F4FEABB7720D/index-2.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/A2F52408-3DBB-40F5-B9E8-4B227CA79A84/index-2.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/3B276211-1CCD-4C57-B51D-3B6C068ED080/index-2.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/D385BA9E-BAA0-4011-8BCE-06A6DCA7A5AA/main.css",
+		"/Users/nfranciosi/Desktop/firefly-backup.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/51C111A3-B0C6-43BE-948A-53B3731CA175/res-gas.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/D3B983A3-7558-406E-80B2-F3F4546741B2/res-elec.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/48CF9D03-B330-48AE-A0FA-CC07CEF42A54/homepage.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/E2D4CD40-A4EF-42FC-85BC-308F9ED6B944/entry-footer.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/CF67DB18-0047-40BA-8469-5F233E594A17/nav-below.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/AC65DCB0-0C90-46D3-A82E-15F0918177B3/index.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/286E81BF-3D76-43E9-AD9E-4097FD8859C7/entry-footer.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/F17F9571-0E51-434D-94C6-715F0707517D/footer.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/91F997B9-2630-45C6-A1C8-EA2168587A18/main-nick.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/DED7969F-F436-4050-823F-5C1751E35E4A/spec-finder-led.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/B4C639CD-06AA-400F-8EEB-E263DAF45C9F/spec-finder-led.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/51CB2C67-ACD8-48AF-A7B4-4C289F4BA50D/main-nick.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/164BA998-97C9-4DD9-A6E6-78C74F7018E8/index-2.php",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/11CB2E63-4224-47AA-AC46-FE968EFF4A53/mobile.custom.js",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/6F6F9CA1-8D5E-4773-A7B7-382296C6E383/mobile.custom.theme.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/29BA96D3-E999-48AD-87D9-2E2DFA0EF15E/mobile.custom.structure.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/30236EA4-2614-4F5F-9861-2D41D5C6FC08/pr.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/ED348386-21A5-4B59-9B84-900BE8C7637D/training.html",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/5FEFE4E5-A55F-4B49-B75A-DB8E82DFD451/main-nick.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/F62B1CB9-21E0-47CA-B50D-DB1EF02A7DE9/main-nick.css",
+		"/Users/nfranciosi/Library/Caches/Cleanup At Startup/Transmit/FBB7F0D6-E6A9-4052-AD48-E176ABBF57D6/training.html",
+		"/Users/nfranciosi/Desktop/map-2-15.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_new",
+			"href=\"http:",
+			"Please",
+			"tenn",
+			"Tenn.",
+			"/apcom",
+			"target=\"_new\"",
+			"/apcom/resources",
+			"<a href=\"/pdf",
+			"<a href",
+			"_blank'",
+			"<a href=\"/pdfs",
+			"/apcom/resources",
+			"100-Cutaway",
+			"ppv_dv",
+			"/*",
+			"American_Vertex76_color corrected",
+			"american_vertex76-76000_power_direct_vent",
+			"View",
+			"<h4>Product Name</h4>",
+			"attendance",
+			"lpcorp",
+			"BTX",
+			"Cyclone Xi",
+			".cf",
+			"color:",
+			" .details.",
+			".details.",
+			"ul li",
+			"tractor",
+			"<li>",
+			"<h3>",
+			"head",
+			"DOMAINNAME",
+			"alias",
+			"/nfs/c04/h04/mnt/61951/domains/protech.com/",
+			"width=\"\\d\"",
+			"width=\"701\"",
+			"city_name",
+			"/* Internet Explorer */\n		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);\n",
+			"-90",
+			"jgp",
+			"footer",
+			"footerText",
+			"2013",
+			"_time_created",
+			"->$",
+			"ings)",
+			"share",
+			"&nbsp;",
+			"style=\"float:right;\"",
+			"| <a href=\"#e-club\" data-transition=\"slide\" class=\"e-club\">E-Club</a>",
+			"<a href=\"#e-club\" data-transition=\"slide\" class=\"e-club\">E-Club</a>",
+			"e-club",
+			"319557",
+			"319555",
+			"– ",
+			"• ",
+			"– ",
+			"Pizza",
+			"h3",
+			"Find a Pizza Your Way...",
+			"Find a Pizz",
+			"FEA4X",
+			"FSU4X",
+			"FSU4p",
+			"FSU4P",
+			"setCenter",
+			"geocoder",
+			"markers",
+			"processForm",
+			"submit",
+			"loadMap",
+			"requestCenter",
+			"processForm",
+			"showEmail",
+			"CustomValidateEmail"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"d",
+				"Date"
+			]
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

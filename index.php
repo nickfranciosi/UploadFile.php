@@ -1,7 +1,7 @@
 <?php 
 use foundationphp\UploadFile;
 
-$max = 50 * 1024;
+$max = 500 * 1024;
 $result = [];
 if(isset($_POST['upload'])){
 	require_once('src/foundationphp/UploadFile.php');
@@ -9,6 +9,7 @@ if(isset($_POST['upload'])){
 	try{
 		$upload = new UploadFile($destination);
 		$upload->setMaxSize($max);
+		$upload->allowAlltypes('nick');
 		$upload->upload();
 		$result = $upload->getMessages();
 	} catch (Exception $e){
