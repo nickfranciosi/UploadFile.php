@@ -16,6 +16,7 @@ class UploadFile
 	protected $typeCheckingOn = true;
 	protected $notTrusted = array ('bin','exe','js','pl','php','py','sh');
 	protected $suffix = '.upload';
+	protected $renameDuplicates;
 
 	public function __construct($uploadFolder)
 	{
@@ -81,8 +82,9 @@ class UploadFile
 		} 
 	}
 
-	public function upload()
+	public function upload($renameDuplicates = true)
 	{
+		$this->renameDuplicates = $renameDuplicates;
 		$uploaded = current($_FILES);
 		if($this->checkFile($uploaded)){
 			$this->moveFile($uploaded);
@@ -170,17 +172,40 @@ class UploadFile
 				$this->newName = $noSpaces . $this->suffix;
 			}
 		}
+		if ($this->renameDuplicates){
+			$name = isset($this->newName) ? $this->newName : $file['name'];
+			$existing = scandir($this->destination);
+			if(in_array($name, $existing)){
+				$i = 1;
+				do{
+					$this->newName = $nameparts['filename'] . '_' .$i++;
+					if(!empty($extension)){
+						$this->newName .= ".$extension";
+					}
+					if(in_array($extension, $this->notTrusted)){
+						$this->newName .= $this->suffix;
+					}
+				}while(in_array($this->newName, $existing));
+			}
+		}
 	}
 
 	protected function moveFile($file)
 	{
-		$result= $file['name'] . ' was uploaded successfully ';
-		if(!is_null($this->newName)){
-			$result .= "and renamed to " . $this->newName;
-		}
-		$result .= '.';
+		$filename = isset($this->newName) ? $this->newName : $file['name'];
+		$success = move_uploaded_file($file['tmp_name'], $this->destination . $filename);
+		if($success){
+			$result= $file['name'] . ' was uploaded successfully ';
+			if(!is_null($this->newName)){
+				$result .= "and renamed to " . $this->newName;
+			}
+			$result .= '.';
 
-		$this->messages[] = $result;
+			$this->messages[] = $result;
+		}else{
+			$this->messages[] = 'Could not upload ' . $file['name'];
+		}
+		
 	}
 
 }
