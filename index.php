@@ -35,7 +35,7 @@ if(isset($_POST['upload'])){
 <?php } ?>
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
 	<label for="file">Filename:</label>
-	<input type="file" name="file" id="file"><br>
+	<input type="file" name="file[]" id="file" multiple><br>
 	<input type="submit" name="upload" id="upload" value="Submit">
 </form>
 
