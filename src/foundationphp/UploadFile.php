@@ -70,8 +70,6 @@ class UploadFile
 		}
 	}
 
-<<<<<<< HEAD
-=======
 	public function allowAllTypes($suffix = null)
 	{
 		$this->typeCheckingOn = false;
@@ -84,12 +82,7 @@ class UploadFile
 		} 
 	}
 
-<<<<<<< HEAD
->>>>>>> dev
-	public function upload()
-=======
 	public function upload($renameDuplicates = true)
->>>>>>> dev
 	{
 		$this->renameDuplicates = $renameDuplicates;
 		$uploaded = current($_FILES);
