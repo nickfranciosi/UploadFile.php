@@ -16,6 +16,8 @@ if(isset($_POST['upload'])){
 		$result[] = $e->getMessage();
 	}
 }
+
+$error = error_get_last();
  ?>
 <!DOCTYPE html>
 <html>
@@ -25,24 +27,27 @@ if(isset($_POST['upload'])){
 </head>
 <body>
 <h2>Uploading Files</h2>
-<?php if($result){ ?>
+<?php if($result || $error){ ?>
 <ul class="result">
 	<?php 
-		foreach($result as $message){
-			echo '<li>' . $message . '</li>';
+		if($error){
+			echo "<li>{$error['message']}</li>";
+		}
+		if($result){
+			foreach($result as $message){
+				echo '<li>' . $message . '</li>';
+			}
 		}
 	?>
 </ul>
 <?php } ?>
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max; ?>"
 	<label for="file">Filename:</label>
 	<input type="file" name="file[]" id="file" multiple><br>
 	<input type="submit" name="upload" id="upload" value="Submit">
 </form>
 
-<?php echo $age; ?>
-<br />
-<?php echo $newName; ?>
 
 </body>
 </html>
